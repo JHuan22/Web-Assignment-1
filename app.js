@@ -18,8 +18,8 @@ let usersRouter = require('./routes/users');
 let app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views')); // creates a path in the view directory for ejs tempalte
+app.set('view engine', 'ejs');// sets view engine
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -29,8 +29,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', indexRouter); // sets up index router as default (root)
+app.use('/users', usersRouter);// sets up user router to handle requests
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
