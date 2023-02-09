@@ -1,0 +1,31 @@
+<% include partials/header.ejs %>
+  <!--Main Nav Navigation-->
+<% include partials/main_nav.ejs %>
+  <main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to the contact Page</h1>
+    <p>Contact us <i class="fa-solid fa-phone"></i> 647-5132-6798</p>
+    <hr class="my-4">
+    <p class="lead">Enter your information here</p>
+</div>
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Phone number</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">The information I entered is correct</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</main>
+<% include partials/bottom_nav.ejs %>
+  <% include partials/footer.ejs %>
+  <!--Script section -->
+
